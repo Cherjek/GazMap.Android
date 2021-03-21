@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="minTableCellWidth">96dp</dimen>
+    <dimen name="minTableCellHeight">48dp</dimen>
+</resources>

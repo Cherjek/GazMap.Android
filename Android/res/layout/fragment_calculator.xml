@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="16dp" >
+    
+    <Button
+        android:id="@+id/btn_archive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/show_archive" />
+    
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_archive"
+        android:text="@string/calc_save" />
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentTop="true"
+	    android:layout_above="@id/btn_save">
+	    
+	    <LinearLayout 
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+	        <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/calc_drived"
+		        android:textStyle="bold"
+		        android:paddingTop="8dp"/>
+		    
+		    <EditText
+		        android:id="@+id/drived"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="numberDecimal"
+		        android:imeOptions="flagNoExtractUi" />
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/calc_fueled"
+		        android:textStyle="bold"
+		        android:paddingTop="8dp" />
+		    
+		    <EditText
+		        android:id="@+id/fueled"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="numberDecimal"
+		        android:imeOptions="flagNoExtractUi" />
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/calc_price"
+		        android:textStyle="bold"
+				android:paddingTop="8dp"/>
+		    
+		    <EditText
+		        android:id="@+id/price"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:inputType="numberDecimal"
+				android:imeOptions="flagNoExtractUi"/>
+		    
+		    <!-- Calculation result -->
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/calc_expense"
+		        android:paddingTop="48dp"
+		        style="?android:attr/listSeparatorTextViewStyle" />
+		    
+		    <TextView
+		        android:id="@+id/expense"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:gravity="right"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		    
+		    <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/calc_total"
+		        android:paddingTop="8dp"
+		        style="?android:attr/listSeparatorTextViewStyle" />
+		    
+		    <TextView
+		        android:id="@+id/total"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:textStyle="bold"
+		        android:gravity="right"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		    
+		</LinearLayout>  
+	</ScrollView>
+</RelativeLayout>

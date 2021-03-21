@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+    
+    <group android:id="@+id/itm_point_group"
+        	android:visible="false">
+        <item android:id="@+id/itm_apply"
+        android:title="@string/menu_apply"
+        android:icon="@drawable/ic_action_accept"
+        android:showAsAction="ifRoom"/>
+		<item android:id="@+id/itm_cancel"
+	    android:title="@string/menu_cancel"
+        android:icon="@drawable/ic_action_cancel"
+        android:showAsAction="ifRoom"/>
+    </group>
+    
+	<group android:id="@+id/itm_main_group"
+        	android:visible="true">
+	    <item android:id="@+id/itm_upd_points"
+	        android:title="@string/menu_update_points"
+	        android:icon="@drawable/ic_action_refresh"
+	        android:showAsAction="ifRoom"/>
+		<item android:id="@+id/itm_add_point"
+		    android:title="@string/menu_add_point"
+	        android:icon="@drawable/drag_marker"
+	        android:showAsAction="ifRoom"/>
+		<item android:id="@+id/itm_calculator"
+		    android:title="@string/menu_calculator"/>
+		<item android:id="@+id/itm_contacts"
+		    android:title="@string/menu_contacts"/>
+		<item android:id="@+id/itm_help"
+		    android:title="@string/menu_help"/>
+		<item android:id="@+id/itm_settings"
+		    android:title="@string/settings"/>
+	</group>
+	    
+</menu>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ymk_balloon_black"
+    android:orientation="vertical">	    
+	    
+	        <LinearLayout
+				        android:layout_width="match_parent"
+					    android:layout_height="wrap_content"					    
+					    android:orientation="horizontal"
+					    android:baselineAligned="false">
+				
+		        		<TextView        
+					        android:id="@+id/balloon_text_view"
+					        android:layout_width="350dp"
+					        android:layout_height="wrap_content"
+					        android:textSize="18sp"
+					        android:textStyle="bold"
+					        android:textColor="@android:color/white"			        
+			        		android:singleLine="false"
+			        		android:maxLines="3"/>			    
+					    
+					    <TextView        
+					        android:id="@+id/balloon_status_view"
+					        android:layout_width="175dp"
+					        android:layout_height="wrap_content"
+					        android:textSize="18sp"
+					        android:textStyle="bold"
+					        android:textColor="@android:color/holo_red_light"
+					        android:singleLine="true"
+					        android:layout_gravity="top"					        
+					    	android:gravity="center_horizontal"
+					        android:visibility="gone"/>
+				
+			</LinearLayout>
+			
+	        <LinearLayout 
+				        android:id="@+id/ll_price_point"
+				        android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_horizontal">
+				        
+				        <LinearLayout
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content"
+						    android:orientation="vertical" 
+						    android:gravity="center_horizontal">
+						    
+						    <TextView 
+							    android:id="@+id/balloon_lstprice_type_view1"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:textStyle="bold"
+							    style="@style/BallonTextViewStyle" />
+						    
+							<LinearLayout 
+							    android:id="@+id/balloon_lstprice_price_view1"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:orientation="horizontal"
+							    android:paddingTop="7dp">
+							</LinearLayout>
+							
+							<TextView 
+							    android:id="@+id/balloon_lstprice_date_view1"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    style="@style/BallonDateViewStyle"
+							    android:paddingBottom="7dp"/>
+						</LinearLayout>
+						<LinearLayout
+						    android:layout_width="wrap_content"
+						    android:layout_height="wrap_content"
+						    android:orientation="vertical" 
+						    android:layout_marginLeft="10dp"
+						    android:gravity="center_horizontal">
+						    
+						    <TextView 
+							    android:id="@+id/balloon_lstprice_type_view2"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:textStyle="bold"
+							    style="@style/BallonTextViewStyle" />
+						    
+							<LinearLayout 
+							    android:id="@+id/balloon_lstprice_price_view2"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:orientation="horizontal"
+							    android:paddingTop="7dp">
+							</LinearLayout>
+							
+							<TextView 
+							    android:id="@+id/balloon_lstprice_date_view2"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    style="@style/BallonDateViewStyle"
+							    android:paddingBottom="7dp"/>
+						</LinearLayout>
+					    
+			</LinearLayout>
+		    
+		    <TextView        
+		        android:id="@+id/balloon_type_view"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        style="@style/BallonTextViewStyle" />
+		    
+		    <TextView        
+		        android:id="@+id/balloon_schedule_view"
+		        android:layout_width="350dp"
+		        android:layout_height="wrap_content"
+		        android:singleLine="false"
+		        android:autoLink="phone|email|web"
+		        style="@style/BallonTextViewStyle" />
+		    
+		    <TextView
+			    android:id="@+id/balloon_isbank_view"
+		        android:layout_width="350dp"
+		        android:layout_height="wrap_content"
+		        android:singleLine="false"
+		        style="@style/BallonTextViewStyle"/>
+		    
+		    <TextView        
+		        android:id="@+id/balloon_address_view"
+		        android:layout_width="350dp"
+		        android:layout_height="wrap_content"
+		        android:singleLine="false"
+		        style="@style/BallonTextViewStyle" />
+		    
+		    <LinearLayout 
+			        android:layout_width="fill_parent"
+			    	android:layout_height="wrap_content"
+			    	android:orientation="horizontal"
+			    	android:gravity="center_horizontal">
+		        	
+		        	<LinearLayout 
+		        	    android:id="@+id/ll_starrating_image_view"
+		        	    android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:orientation="horizontal">
+		        	    
+		        	    <ImageView
+				    	    android:src="@drawable/rating_star_empty"
+				    	    android:layout_height="30dp"
+				    	    android:layout_width="30dp"/>
+		        	    <ImageView
+				    	    android:src="@drawable/rating_star_empty"
+				    	    android:layout_height="30dp"
+				    	    android:layout_width="30dp"/>
+		        	    <ImageView
+				    	    android:src="@drawable/rating_star_empty"
+				    	    android:layout_height="30dp"
+				    	    android:layout_width="30dp"/>
+		        	    <ImageView
+				    	    android:src="@drawable/rating_star_empty"
+				    	    android:layout_height="30dp"
+				    	    android:layout_width="30dp"/>
+		        	    <ImageView
+				    	    android:src="@drawable/rating_star_empty"
+				    	    android:layout_height="30dp"
+				    	    android:layout_width="30dp"/>
+		        	</LinearLayout>
+
+		        	<TextView 
+		        	    android:id="@+id/balloon_rating_view"
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="wrap_content"
+		        	    style="@style/BallonTextViewStyle"
+		        	    android:layout_marginLeft="5dp"
+		        	    android:layout_gravity="center_vertical"/>
+		    	</LinearLayout>
+		    	
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="horizontal"
+		    	android:showDividers="middle"
+		    	android:divider="@android:drawable/divider_horizontal_dark"    	   	
+		    	android:gravity="center_horizontal">		        
+		
+		    	<ImageView
+		    	    android:id="@+id/balloon_btnmin_view"		    	    
+		    	    android:layout_marginLeft="5dp"
+		    	    android:layout_marginRight="5dp"
+		    	    android:src="@drawable/ratdismin"
+		    	    android:layout_height="40dp"
+		    	    android:layout_width="40dp"/>
+		
+		    	<TextView 
+		    	    	android:id="@+id/balloon_ratingtext_view"
+		        	    android:layout_width="wrap_content"
+		        	    android:layout_height="wrap_content"
+		        	    android:layout_marginLeft="5dp"
+		        	    android:layout_marginRight="5dp"
+		        	    android:layout_gravity="center_vertical"
+		        	    android:text="@string/rating_text_null"
+		        	    style="@style/BallonTextViewStyle"/>
+		    	<ImageView 
+		    	    android:id="@+id/balloon_btnplus_view"
+		    	    android:layout_height="40dp"
+		    	    android:layout_width="40dp"
+		        	android:layout_marginLeft="5dp"
+		    	    android:src="@drawable/ratdisplus"/>
+		    </LinearLayout>
+		    
+		    <LinearLayout 
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:orientation="vertical"
+		    	android:showDividers="middle"
+		    	android:divider="@android:drawable/divider_horizontal_dark"
+		    	android:gravity="center_horizontal">
+		        <TextView        
+		        android:id="@+id/balloon_text_navigate"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="@string/dlg_balloon_navigate"        
+		        android:layout_weight="1"
+		        android:textSize="18sp"
+		        android:textColor="@android:color/holo_blue_light"
+		        android:gravity="center_horizontal"/>
+		        
+		        <TextView        
+		        android:id="@+id/balloon_text_info"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:text="@string/dlg_balloon_about" 
+		        android:layout_weight="1"
+		        android:textSize="18sp"
+		        android:textColor="@android:color/holo_blue_light"
+		        android:gravity="center_horizontal"/>
+		    </LinearLayout>
+    
+
+</LinearLayout>

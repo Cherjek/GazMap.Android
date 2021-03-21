@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:padding="16dp"
+	android:fillViewport="true"	>
+	
+	<HorizontalScrollView 
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+		android:fillViewport="true">
+
+	    <LinearLayout 
+	        android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			
+	        <TextView
+	            android:id="@+id/archive_one_km_price"
+	            android:layout_width="match_parent" 
+				android:layout_height="wrap_content"
+				android:text="@string/archive_one_km_price"/>
+	        
+	        <LinearLayout 
+		        android:layout_width="match_parent" 
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+		        
+	            <TextView
+		            android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+		            android:text="@string/archive_saved_start" />
+	            
+	            <EditText
+	                android:id="@+id/archive_gazoline_price"
+		            android:layout_width="80dp"
+					android:layout_height="wrap_content"
+		        	android:inputType="numberDecimal"
+					android:imeOptions="flagNoExtractUi"/>
+	            
+	            <TextView
+	                android:id="@+id/archive_saved_result"
+		            android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+		            android:text="@string/archive_saved_end" />
+	        </LinearLayout>
+	        
+		    <TableLayout 
+		    android:id="@+id/archive_table"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:stretchColumns="*"/>
+		    
+	    </LinearLayout>
+	</HorizontalScrollView>
+</ScrollView>

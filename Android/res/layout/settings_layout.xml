@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_margin="5dp">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP address" >
+        
+    </TextView>
+
+	<EditText
+	    android:id="@+id/et_ip"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:inputType="text"/>
+	
+	<TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/setting_view_typeoil"/>
+	    <Spinner android:id="@+id/sp_type_point"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+	    </Spinner>
+	
+	<LinearLayout
+        style="@android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+        android:id="@+id/btn_settings_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/ok" 
+        style="@android:attr/buttonBarButtonStyle"/>
+    
+    	<Button
+        android:id="@+id/btn_settings_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/cancel"
+        style="@android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" 
+	    android:layout_marginLeft="5dp">
+	
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:focusable="true"
+	        android:focusableInTouchMode="true"></LinearLayout>
+	    <TextView android:id="@+id/tv_status_point"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dlg_point_status"/>
+	    <Spinner android:id="@+id/sp_status_point"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+	    </Spinner>
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dlg_point_type"/>
+	    <Spinner android:id="@+id/sp_type_point"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        
+	    </Spinner>
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dlg_point_name"/>
+	    <EditText        
+	        android:id="@+id/et_title_point"
+	        android:inputType="text"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+	    
+	    <TextView 
+	        	android:id="@+id/tv_price_point"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/dlg_point_price"/>	    
+		    <ListView 
+		        android:id="@+id/lst_price_point"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="7dp">
+		    </ListView>	        
+	    
+	    <TextView 
+	        android:id="@+id/tv_address_point"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dlg_point_address"/>
+	    <EditText        
+	        android:id="@+id/et_address_point"
+	        android:inputType="text"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+	    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dlg_point_schedule"/>
+	    <EditText        
+	        android:id="@+id/et_schedule_point"
+	        android:inputType="text"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+	    
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal">
+	        <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/dlg_point_isBankCard"/>
+	
+	        <CheckBox
+	            android:id="@+id/chck_isBankCard_point"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        style="@android:attr/buttonBarStyle"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal" 
+	        android:layout_marginTop="10dp">
+	
+	        <Button
+	        android:id="@+id/btn_point_create"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@android:string/ok" 
+	        style="@android:attr/buttonBarButtonStyle"/>
+	    
+	    	<Button
+	        android:id="@+id/btn_point_cancel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@android:string/cancel"
+	        style="@android:attr/buttonBarButtonStyle" />
+	    </LinearLayout>
+	    
+	
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gaz Station</string>
+    
+    <string name="menu_update_points">Обновить</string>
+    <string name="menu_add_point">Добавить точку</string>
+    <string name="menu_contacts">Контакты</string>
+    <string name="menu_help">Справка</string>
+    <string name="menu_apply">Применить</string>
+    <string name="menu_cancel">Отменить</string>
+    <string name="menu_calculator">Калькулятор</string>
+    <string name="settings">Настройки</string>
+    
+    <string name="msg_not_current_location">Невозможно получить текущие координаты</string>
+    <string name="msg_please_wait">Пожалуйста подождите</string>
+    <string name="msg_error_connect">Ошибка подключения</string>
+    <string name="msg_host_not_connect">Сервер не отвечает</string>
+    
+    <string name="dlg_point_name">Название заправки</string>
+    <string name="dlg_point_address">Адрес</string>
+    <string name="dlg_point_status">Статус</string>
+	<string name="dlg_point_type">Тип топлива</string>
+	<string name="dlg_point_schedule">Режим работы</string>
+	<string name="dlg_point_isBankCard">Прием банковских карт</string>
+	<string name="dlg_point_price">Цена</string>
+	
+	<string name="dlg_balloon_navigate">Показать маршрут</string>
+	<string name="dlg_balloon_qnavigate">Проложить маршрут?</string>
+	<string name="dlg_balloon_about">Редактировать</string>
+	
+	<string name="rating_text">Рейтинг:</string>
+	<string name="rating_text_good">Нравится</string>
+    <string name="rating_text_bad">Не нравится</string>
+    <string name="rating_text_null">Голосовать</string>
+    
+    <string name="show_archive">Перейти в архив</string>
+    <string name="calc_header">Расчет расхода газа на 100 км</string>
+    <string name="calc_fueled">Заправлено, л</string>
+    <string name="calc_drived">Пройдено, км</string>
+    <string name="calc_price">Цена за литр</string>
+    <string name="calc_expense">Расход, л/100км</string>
+    <string name="calc_total">Итого</string>
+    <string name="calc_save">Сохранить в архив</string>
+    
+    <string name="calc_date">Дата</string>
+    <string name="calc_period">За все время</string>
+    
+    <string name="btn_ok">Ок</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="calc_save_error">Для сохранения необходимо заполнить все поля</string>
+    <string name="calc_field_error">Обязательное поле</string>
+    <string name="archive_one_km_price" formatted="false">Стоимость 1 км на газу: %s</string>
+    <string name="archive_saved_start">При цене за литр бензина</string>
+    <string name="archive_saved_end" formatted="false">сэкономлено %s</string>
+    
+    <string name="setting_view_typeoil">Отображать заправки</string>
+</resources>

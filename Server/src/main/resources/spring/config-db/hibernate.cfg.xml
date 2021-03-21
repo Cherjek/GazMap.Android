@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<mapping class="ru.zch.gasstation.domain.Point"/>
+		<mapping class="ru.zch.gasstation.domain.Device"/>
+		<mapping class="ru.zch.gasstation.domain.Vote"/>
+		<mapping class="ru.zch.gasstation.domain.Price"/>
+		<mapping class="ru.zch.gasstation.domain.Type"/>
+		<mapping class="ru.zch.gasstation.domain.PointTypesId"/>
+		<mapping class="ru.zch.gasstation.domain.Change"/>
+	</session-factory>
+</hibernate-configuration>
